@@ -1,0 +1,19 @@
+{
+   "name": "chatkit44",
+   "version": "0.0.1",
+   "description": "chatkit44",
+   "main": "server.js",
+   "scripts": {
+      "start": "node server.js"
+   },
+   "engines": {
+      "node": "10.15.1"
+   },
+   "dependencies": {
+      "express": "^4.16.4",
+      "socket.io": "^2.2.0"
+   },
+   "devDependencies": {},
+   "author": "developer",
+   "license": "ISC"
+}

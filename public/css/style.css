@@ -1,0 +1,105 @@
+body { 
+ font: 12px Helvetica, Arial; 
+ }
+form { 
+background: #ccc; padding: 2px; position: fixed; bottom: 0; width: 20%; 
+}
+form input { border: 0; padding: 10px; width: 70%; margin-right: .55%; 
+}
+form button { width: 22%; background: rgb(130, 124, 155); border: none; padding: 10px; 
+}
+#messages { list-style-type: none; margin: 0; padding: 0; 
+}
+#messages li { padding: 5px 10px; 
+}
+#messages li:nth-child(odd) { background: #eee; 
+}
+
+
+#chatbox {
+    position: absolute;
+    z-index: 1;
+    left: 10px;
+    bottom: 0;
+}
+
+#input {
+    font: 300 18px/40px 'light','Helvetica Neue',Arial,Helvetica,sans-serif;
+
+    width: 277px;
+    height: 40px;
+    margin-bottom: 0;
+    padding: 5px 10px;
+
+    letter-spacing: 1px;
+
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    background: none repeat scroll 0 0 #f9f9f9;
+}
+
+#messages {
+    font: 300 18px/40px 'light','Helvetica Neue',Arial,Helvetica,sans-serif;
+
+    overflow: scroll;
+
+    width: 255px;
+    height: 400px;
+    margin-bottom: 0;
+    padding: 5px 10px;
+
+    letter-spacing: 1px;
+
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+    background: none repeat scroll 0 0 #f9f9f9;
+}
+
+.flip {
+    -webkit-transform: rotateY(180deg);
+}
+
+.buttonBox {
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+}
+.button {
+    font-family: arial;
+    font-size: 15px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    padding: 6px 24px;
+
+    text-decoration: none;
+
+    color: #777;
+    border: 1px solid #dcdcdc;
+    -webkit-border-radius: 6px;
+       -moz-border-radius: 6px;
+            border-radius: 6px;
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(.05, #ededed), color-stop(1, #dfdfdf) );
+    background: -moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+    background-color: #ededed;
+    -webkit-box-shadow: inset 0 1px 0 0 #fff;
+       -moz-box-shadow: inset 0 1px 0 0 #fff;
+            box-shadow: inset 0 1px 0 0 #fff;
+    text-shadow: 1px 1px 0 #fff;
+
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+}
+
+.button:hover {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(.05, #dfdfdf), color-stop(1, #ededed) );
+    background: -moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+    background-color: #dfdfdf;
+
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+}
+.button:active {
+    position: relative;
+    top: 1px;
+}
